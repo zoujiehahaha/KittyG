@@ -11,11 +11,11 @@
 <body>
     <style>.box { justify-content:center; display:flex; flex-wrap:wrap;  }; </style>
     <div class="box">
-                <div id="beb98aec0e5a45e98d662a4e8fdd036e" class="chart-container" style="width:100%; height:400px;"></div>
+                <div id="9d29ff2561a84c5f913fe9454cfe97cc" class="chart-container" style="width:100%; height:400px;"></div>
     <script>
-        var chart_beb98aec0e5a45e98d662a4e8fdd036e = echarts.init(
-            document.getElementById('beb98aec0e5a45e98d662a4e8fdd036e'), 'wonderland', {renderer: 'canvas'});
-        var option_beb98aec0e5a45e98d662a4e8fdd036e = {
+        var chart_9d29ff2561a84c5f913fe9454cfe97cc = echarts.init(
+            document.getElementById('9d29ff2561a84c5f913fe9454cfe97cc'), 'wonderland', {renderer: 'canvas'});
+        var option_9d29ff2561a84c5f913fe9454cfe97cc = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -53,10 +53,22 @@
                 [
                     "2021-02-11 00:00:00",
                     8
-                ],
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "heatmap",
+            "coordinateSystem": "calendar",
+            "name": "JustDoit2",
+            "data": [
                 [
-                    "2021-02-16 00:00:00",
-                    8
+                    "2021-03-13 00:00:00",
+                    10
                 ]
             ],
             "label": {
@@ -69,10 +81,12 @@
     "legend": [
         {
             "data": [
-                "JustDoit"
+                "JustDoit",
+                "JustDoit2"
             ],
             "selected": {
-                "JustDoit": true
+                "JustDoit": true,
+                "JustDoit2": true
             },
             "show": true,
             "padding": 5,
@@ -169,9 +183,9 @@
         "borderWidth": 0
     }
 };
-        chart_beb98aec0e5a45e98d662a4e8fdd036e.setOption(option_beb98aec0e5a45e98d662a4e8fdd036e);
+        chart_9d29ff2561a84c5f913fe9454cfe97cc.setOption(option_9d29ff2561a84c5f913fe9454cfe97cc);
             window.addEventListener('resize', function(){
-                chart_beb98aec0e5a45e98d662a4e8fdd036e.resize();
+                chart_9d29ff2561a84c5f913fe9454cfe97cc.resize();
             })
     </script>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>    </div>
