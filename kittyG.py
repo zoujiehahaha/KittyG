@@ -6,7 +6,7 @@ from pyecharts.globals import ThemeType
 df=pd.read_excel('kittycommit.xlsx')
 l = []
 for x in range(len(df)):
-    l.append([str(df["date"][x]), int(df["commit"][x])])
+    l.append([str(df["date"][x]), df["commit"][x]])
 print(l)
 Calendar_1 = Calendar(
     init_opts=opts.InitOpts(
