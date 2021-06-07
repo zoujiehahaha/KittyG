@@ -1,1 +1,1 @@
-python ./kittyG.py 
+python ./测试.py 

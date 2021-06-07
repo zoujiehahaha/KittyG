@@ -49,4 +49,4 @@ Calendar_1.set_global_opts(
 )
 pages2 = Page(layout=Page.SimplePageLayout, interval=20)
 pages2.add(Calendar_1)
-pages2.render("./kittyG2021.html")
+pages2.render("C:\Komi\Code\Kitty\KittyGu\KittyGu/kittyG2021.html")
