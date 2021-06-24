@@ -21,7 +21,7 @@ for person in persons:
     l = []
     print( range(len(df_this)))
     for x in range(len(df_this)):
-        l.append([str(df_this["date"].to_list()[x]), int(df_this["commit"].to_list()[x])])
+        l.append([str(df_this["date"].to_list()[x]), df_this["commit"].to_list()[x]])
 
     Calendar_1.add(
         series_name=person,
