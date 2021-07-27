@@ -11,11 +11,11 @@
 <body>
     <style>.box { justify-content:center; display:flex; flex-wrap:wrap;  }; </style>
     <div class="box">
-                <div id="2fed9089f8824011abd1d39c85c64fa9" class="chart-container" style="width:100%; height:400px;"></div>
+                <div id="6468bb0db1b543708e14abb7cd91f0d4" class="chart-container" style="width:100%; height:400px;"></div>
     <script>
-        var chart_2fed9089f8824011abd1d39c85c64fa9 = echarts.init(
-            document.getElementById('2fed9089f8824011abd1d39c85c64fa9'), 'wonderland', {renderer: 'canvas'});
-        var option_2fed9089f8824011abd1d39c85c64fa9 = {
+        var chart_6468bb0db1b543708e14abb7cd91f0d4 = echarts.init(
+            document.getElementById('6468bb0db1b543708e14abb7cd91f0d4'), 'wonderland', {renderer: 'canvas'});
+        var option_6468bb0db1b543708e14abb7cd91f0d4 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -168,17 +168,35 @@
                 "position": "top",
                 "margin": 8
             }
+        },
+        {
+            "type": "heatmap",
+            "coordinateSystem": "calendar",
+            "name": "wade",
+            "data": [
+                [
+                    "2021-07-27 00:00:00",
+                    7.0
+                ]
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
         }
     ],
     "legend": [
         {
             "data": [
                 "\u6668",
-                "\u751c"
+                "\u751c",
+                "wade"
             ],
             "selected": {
                 "\u6668": true,
-                "\u751c": true
+                "\u751c": true,
+                "wade": true
             },
             "show": true,
             "padding": 5,
@@ -275,9 +293,9 @@
         "borderWidth": 0
     }
 };
-        chart_2fed9089f8824011abd1d39c85c64fa9.setOption(option_2fed9089f8824011abd1d39c85c64fa9);
+        chart_6468bb0db1b543708e14abb7cd91f0d4.setOption(option_6468bb0db1b543708e14abb7cd91f0d4);
             window.addEventListener('resize', function(){
-                chart_2fed9089f8824011abd1d39c85c64fa9.resize();
+                chart_6468bb0db1b543708e14abb7cd91f0d4.resize();
             })
     </script>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>    </div>
