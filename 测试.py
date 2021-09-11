@@ -4,7 +4,7 @@ import pandas as pd
 from pyecharts.charts import Page, Tab
 from pyecharts.globals import ThemeType
 
-df = pd.read_excel("C:\Komi\Code\Kitty\KittyGu\KittyGu\kittycommit.xlsx")
+df = pd.read_excel("C:\Komi\Code\kitty\kittycommit.xlsx")
 df2 = df.groupby(["date", "person"]).agg("sum").reset_index()
 print(df2)
 
@@ -49,4 +49,4 @@ Calendar_1.set_global_opts(
 )
 pages2 = Page(layout=Page.SimplePageLayout, interval=20)
 pages2.add(Calendar_1)
-pages2.render("C:\Komi\Code\Kitty\KittyGu\KittyGu\kittyG2021.html")
+pages2.render("C:\Komi\Code\kitty\kittyG2021.html")
