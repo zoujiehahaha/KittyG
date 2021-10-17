@@ -39,7 +39,7 @@ for person in persons:
 Calendar_1.set_global_opts(
     title_opts=opts.TitleOpts(pos_top="30", pos_left="center", title="2021年日历"),
     visualmap_opts=opts.VisualMapOpts(
-        max_=25,
+        max_=30,
         min_=0,
         orient="horizontal",
         is_piecewise=False,
