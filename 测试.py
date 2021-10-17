@@ -8,6 +8,7 @@ df = pd.read_excel("C:\Komi\Code\kitty\kittycommit.xlsx")
 df2 = df.groupby(["date", "person"]).agg("sum").reset_index()
 print(df2)
 
+
 persons = df2["person"].drop_duplicates().to_list()
 print(persons)
 
