@@ -4,7 +4,7 @@ import pandas as pd
 from pyecharts.charts import Page, Tab
 from pyecharts.globals import ThemeType
 
-df = pd.read_excel("C:\Komi\Code\kitty\kittycommit.xlsx")
+df = pd.read_excel("C:\Komi\Code\kitty\kittycommit2022.xlsx")
 df2 = df.groupby(["date", "person"]).agg("sum").reset_index()
 print(df2)
 
@@ -31,7 +31,7 @@ for person in persons:
             pos_top="120",
             pos_left="30",
             pos_right="30",
-            range_=2021,
+            range_=2022,
             daylabel_opts=opts.CalendarDayLabelOpts(name_map="cn"),
             monthlabel_opts=opts.CalendarMonthLabelOpts(name_map="cn"),
             yearlabel_opts=opts.CalendarYearLabelOpts(is_show=False),
@@ -50,4 +50,4 @@ Calendar_1.set_global_opts(
 )
 pages2 = Page(layout=Page.SimplePageLayout, interval=20)
 pages2.add(Calendar_1)
-pages2.render("C:\Komi\Code\kitty\kittyG2021.html")
+pages2.render("C:\Komi\Code\kitty\kittyG2022.html")
